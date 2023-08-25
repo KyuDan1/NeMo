@@ -922,7 +922,7 @@ class MegatronGPTModel(MegatronBaseModel, TextGeneration):
                 model_module.eval()
 
         loss = self.fwd_bwd_step(dataloader_iter, batch_idx, True)
-        
+
         # Increment self._val_micro_batches_consumed so that validation is exited properly
         self._val_micro_batches_consumed += get_num_microbatches()
         if isinstance(self.model, list):

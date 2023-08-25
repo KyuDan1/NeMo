@@ -66,6 +66,7 @@ class BeamSearchDecoderWithLM(NeuralModule):
             raise ModuleNotFoundError(
                 "BeamSearchDecoderWithLM requires the installation of ctc_decoders "
                 "from scripts/asr_language_modeling/ngram_lm/install_beamsearch_decoders.sh"
+                "example: ./scripts/asr_language_modeling/ngram_lm/install_beamsearch_decoders.sh /path/to/your/nemo"
             )
 
         super().__init__()
